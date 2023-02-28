@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Class Activities</title>
+</head>
+<body class="container"> 
+    <br>
+    <div>
+		<h1>Clubs App</h1>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Club</th>
+					<th>Day</th>
+                    <th>Time</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Arty Party</td>
+                    <td>Monday</td>
+                    <td>3:00pm</td>
+				</tr>
+				<tr>
+					<td>Book Club</td>
+                    <td>Tuesday</td>
+                    <td>3:00pm</td>
+				</tr>
+				<tr>
+					<td>Kitchen Krew</td>
+                    <td>Wednesday</td>
+                    <td>3:00pm</td>
+				</tr>
+				<tr>
+					<td>Little Athletes</td>
+                    <td>Thursday</td>
+                    <td>3:00pm</td>
+				</tr>
+				<tr>
+					<td>Future Inventors</td>
+                    <td>Friday</td>
+                    <td>3:00pm</td>
+				</tr>
+				<tr>
+					<td>Thespians</td>
+                    <td>Monday</td>
+                    <td>4:00pm</td>
+				</tr>
+				<tr>
+					<td>Dance Party</td>
+                    <td>Tuesday</td>
+                    <td>4:00pm</td>
+				</tr>
+				<tr>
+					<td>Mad Scientists</td>
+                    <td>Wednesday</td>
+                    <td>4:00pm</td>
+				</tr>
+				<tr>
+					<td>Community Helpers</td>
+                    <td>Thursday</td>
+                    <td>4:00pm</td>
+				</tr>
+				<tr>
+					<td>Survival Guides</td>
+                    <td>Friday</td>
+                    <td>4:00pm</td>
+				</tr>
+			</tbody>
+		</table>
+    
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="select-club">Select Club</label>
+                        <select class="form-control" id="select-club" required>
+                            <option value="">--Select Club--</option>
+                            <option value="Arty Party">Arty Party</option>
+                            <option value="Book Club">Book Club</option>
+                            <option value="Kitchen Krew">Kitchen Krew</option>
+                            <option value="Little Athletes">Little Athletes</option>
+                            <option value="Future Inventors">Future Inventors</option>
+                            <option value="Thespians">Thespians</option>
+                            <option value="Dance Party">Dance Party</option>
+                            <option value="Mad Scientists">Mad Scientists</option>
+                            <option value="Community Helpers">Community Helpers</option>
+                            <option value="Survival Guides">Survival Guides</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="new-club" class="btn btn-primary form-control">Start Club</button>
+            </div>
+        </div>
+    </div> <br>
+    
+    <div id="clubs">
+
+    </div>
+    
+    <script src="week10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
