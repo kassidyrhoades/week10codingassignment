@@ -23,13 +23,13 @@ class Club {
 let clubs = [];
 let clubId = 0;
 
-onClick('new-club', () => {
+onclick('new-club', () => {
     clubs.push(new Club(clubId++, getValue('select-club')));
     drawDOM();
     console.log(clubs);
 });
 
-function onClick(id, action) {
+function onclick(id, action) {
     let element = document.getElementById(id);
     element.addEventListener('click', action);
     return element;
@@ -68,7 +68,7 @@ function createDeleteRowButton(club, participant) {
     let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Delete';
-    btn.onClick = () => {
+    btn.onclick = () => {
         let index = club.participants.indexof(participant);
         club.participants.splice(index, 1);
         drawDOM();
@@ -80,7 +80,7 @@ function createDeleteClubButton(club) {
     let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Cancel Club';
-    btn.onClick = () => {
+    btn.onclick = () => {
         let index = clubs.indexof(club);
         clubs.splice(index, 1);
         drawDOM();
@@ -92,8 +92,8 @@ function createNewParticipantButton(club) {
     let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Join';
-    btn.onClick = () => {
-        club.participants.push(new Participant(getValue(`name-input${club-id}`), getValue(`grade-input${club-id}`)));
+    btn.onclick = () => {
+        clubs.participants.push(new Participant(getValue(`name-input-${club.id}`), getValue(`grade-input-${club.id}`)));
         drawDOM();
     };
     return btn;
