@@ -69,7 +69,7 @@ function createDeleteRowButton(club, participant) {
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Delete';
     btn.onclick = () => {
-        let index = club.participants.indexof(participant);
+        let index = club.participants.indexOf(participant);
         club.participants.splice(index, 1);
         drawDOM();
     };
@@ -81,7 +81,7 @@ function createDeleteClubButton(club) {
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Cancel Club';
     btn.onclick = () => {
-        let index = clubs.indexof(club);
+        let index = clubs.indexOf(club);
         clubs.splice(index, 1);
         drawDOM();
     };
@@ -93,7 +93,7 @@ function createNewParticipantButton(club) {
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Join';
     btn.onclick = () => {
-        clubs.participants.push(new Participant(getValue(`name-input-${club.id}`), getValue(`grade-input-${club.id}`)));
+        club.participants.push(new Participant(getValue(`name-input-${club.id}`), getValue(`grade-input-${club.id}`)));
         drawDOM();
     };
     return btn;
